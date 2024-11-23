@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.main-section {
+    flex-grow: 1;
+    padding-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.company h2 {
+    margin-left: 20px;
+}
+
+.products ul li {
+    display: inline-flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+/* Search Bar */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.select-category {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner Section */
+.banner-section {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.banner-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Category Section */
+.category-section {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.category-section ul li {
+    list-style: none;
+    display: inline-flex;
+    width: 200px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    border: 1px double black;
+    flex-direction: column;
+}
+
+.category-section ul {
+    position: relative;
+}
+
+.category-section span {
+    position: absolute;
+    top: 120px;
+}
+
+.category-section ul li img {
+    width: 100%;
+}
+
+/* Arrival Section */
+.arrival-section {
+    width: 100%;
+    height: 150px;
+}
+
+.arrival-section ul li {
+    list-style: none;
+    display: inline-flex;
+    width: 220px;
+    height: 220px;
+    margin: 20px;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+.arrival-section ul li span {
+    font-size: small;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Hover Effects */
+.sub-section ul li:hover {
+    transform: scale(1.2);
+}
+
+.category-section li:hover {
+    transform: scale(1.2);
+}
+
+.sub-section ul li img {
+    width: 100%;
+    margin-left: 10px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.footer h3 {
+    margin: 0;
+}
+
+/* Layout for Individual Product Sections */
+.product-detail {
+    display: flex;
+}
+
+.pro-left {
+    width: 100%;
+    max-width: 50%;
+    border: 1px solid black;
+}
+
+.pro-left img {
+    width: 500px;
+    height: 500px;
+    padding-left: 50px;
+}
+
+.pro-right {
+    width: 100%;
+    max-width: 50%;
+    border: 1px solid black;
+}
+
+.pro-right h4 {
+    padding: 20px;
+}
+
+.pro-right ul li {
+    list-style: none;
+    margin: 20px;
+}
+
+/* Buttons */
+.pro-button {
+    width: 100%;
+}
+
+.addBtn,
+.buyBtn {
+    width: 10rem;
+    height: 3rem;
+    margin: 10px;
+}
+
+.addBtn {
+    background-color: orangered;
+    color: white;
+}
+
+.buyBtn {
+    background-color: aquamarine;
+    color: black;
+}
+
+/* Sub-section */
+.sub-section {
+    border: 1px solid black;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+    top: 650px;
+}
+
+.footer h3 {
+    margin: 0;
+}
+
+/* Category Section */
+.category-section ul li {
+    flex-direction: column;
+}
+
+.company h2 {
+    margin-left: 20px;
+}
+
+.products ul li {
+    display: inline-flex;
+    list-style: none;
+    margin-right: 20px;
+}

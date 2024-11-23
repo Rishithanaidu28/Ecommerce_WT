@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ecommerce_WT</title>
+    <script>
+        // Function to handle search and redirect
+        function handleSearch() {
+            var query = document.querySelector('.search-bar').value.trim().toLowerCase();
+            if (query) {
+                // List of predefined products and their corresponding pages
+                var pages = {
+                    "laptops": "laptops.html",
+                    "mobiles": "mobiles.html",
+                    "acs": "Airconditions.html",
+                    "headphones": "headphones.html", // Change to appropriate page if needed
+                    "watches": "watches.html",
+                    "fashions": "fashions.html",  // Change to appropriate page if needed
+                    "decors": "decors.html",  // Change to appropriate page if needed
+                    "mixers": "mixers.html"
+                };
+                
+                // Check if the query matches any of the predefined pages
+                if (pages[query]) {
+                    window.location.href = pages[query];  // Redirect to the corresponding page
+                } else {
+                    alert("Sorry, we couldn't find results for '" + query + "'.");  // Show an alert if no match is found
+                }
+            } else {
+                alert("Please enter a search query.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="main-section">
+
+        <div class="navbar">
+            <div class="company">
+                <h2>E-commerce</h2>
+            </div>
+            <!-- Search Bar Container -->
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search for products..." />
+                <button class="search-btn" onclick="handleSearch()">Search</button>
+            </div>
+        </div>
+
+        <div class="banner-section">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/004/299/835/small_2x/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg" width="1500" height="10" alt="banner" />
+        </div>
+
+        <div>
+            <h2>New Products</h2>
+        </div>
+
+        <div class="category-section">
+            <ul>
+                <li>
+                    <img src="https://lh3.googleusercontent.com/7oixYeJA9phwXQLgcYTdfvkcBjLmM2MNCsDool0KOoO9dR8uY0_n180KxnCdOLPkofHmrk3N6RHlhpJ6XNx4PEI-jly8kVgAvQyO2c1fhhnC8F_63HD3Uecl0ZfSKNcdx7V9drXapbD5P6ON7h0FNgSHOF65qPh8" />
+                    <span>Laptop</span>
+                </li>
+                <li>
+                    <img src="https://assets.telegraphindia.com/telegraph/2022/Aug/1661949000_lead-2.jpg" />
+                    <span>Fashion</span>
+                </li>
+                <li>
+                    <img src="https://techarx.com/wp-content/uploads/2020/05/best_phones.jpg" />
+                    <span>Phone</span>
+                </li>
+                <li>
+                    <img src="https://media.gq.com/photos/5e8c9a7cc21b8b00087a00f1/master/pass/watches-fix.jpg" />
+                    <span>Watch</span>
+                </li>
+                <li>
+                    <img src="https://www.jagranimages.com/images/newimg/15022024/15_02_2024-type_of_fridges,_type_of_refrigerators_23653951_175513881.jpg" />
+                    <span>Fridge</span>
+                </li>
+                <li>
+                    <img src="https://m.media-amazon.com/images/I/71Pc9HBR7JL._AC_UF1000,1000_QL80_.jpg" />
+                    <span>Speakers</span>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>New Arrivals</h2>
+        </div>
+
+        <div class="arrival-section">
+            <div class="sub-section">
+                <ul>
+                    <a href="Aircondition.html">
+                        <li>
+                            <img src="https://i.gadgets360cdn.com/products/1-5-ton-split-ac-asga18futc-large-15000-12334-1584386593.jpg" alt="" />
+                            <span>O General Ac </span>
+                        </li>
+                    </a>
+                    <a href="headphone.html">
+                        <li>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4GnI_aR4lo1c1o1rlX4AjoZCTVIojl-pLKw&s" alt="" />
+                            <span>Boat Head Phones</span>
+                        </li>
+                    </a>
+                    <a href="mixer.html">
+                        <li>
+                            <img src="https://m.media-amazon.com/images/I/61mde481sCS.jpg" alt="" />
+                            <span>Usha Mixer Giant</span>
+                        </li>
+                    </a>
+                    <a href="mobile.html">
+                        <li>
+                            <img src="https://images.samsung.com/is/image/samsung/assets/in/explore/brand/5-best-android-mobile-phones-2022-in-india/banner-mobile-720x761-080422.jpg?$720_N_JPG$" alt="" />
+                            <span>Samsung Mobiles </span>
+                        </li>
+                    </a>
+                    <a href="decor.html">
+                        <li>
+                            <img src="https://4.imimg.com/data4/MS/DJ/IMOB-15227227/img-20150908-wa0019-500x500.jpg" alt="" />
+                            <span>Home Decor</span>
+                        </li>
+                    </a>
+                    <a href="trimmer.html">
+                        <li>
+                            <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11915238/2021/10/11/e97689dd-24fb-4336-bba7-8b1ea7bb302f1633932426722-Philips-Men-BT310115-Series-3000-Beard-Trimmer---White-25616-1.jpg" alt="" />
+                            <span>Philips Trimmer</span>
+                        </li>
+                    </a>
+                    <a href="watch.html">
+                        <li>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScZ12v-aVgE_yx05rrc3P_6qEQfXuqLolhDg&s" alt="" />
+                            <span>Apple Smart Watch</span>
+                        </li>
+                    </a>
+                    <a href="laptop.html">
+                        <li>
+                            <img src="https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/notebooks/latitude-notebooks/14-3420/media-gallery/peripherals_laptop_latitude_3420nt_gallery_1.psd?fmt=pjpg&pscan=auto&scl=1&wid=3319&hei=2405&qlt=100,1&resMode=sharp2&size=3319,2405&chrss=full&imwidth=5000" alt="" />
+                            <span>Dell Laptop</span>
+                        </li>
+                    </a>
+                    <a href="Fashion.html">
+                        <li>
+                            <img src="https://images.meesho.com/images/products/347368518/8yidq_512.webp" alt="" />
+                            <span>Fashion</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJHTtX1EEs-A4EMFq3u3YSvz_123WYavBrFA&s" width="1500" height="100" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
